@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<a href="{{ url_for('index')}}" class="text-decoration-none">
+    <h1 class="mt-4 text-secondary alert alert-info">Калькулятор накоплений</h1>
+</a>
+<form id="savings-form" class="mt-4">
+    <div class="input-group">
+        <input type="number" id="daily-amount" name="daily-amount" class="form-control" style="width: 250px;"
+            placeholder="Ежедневно откладывать (руб)">
+        <input type="number" id="target-amount" name="target-amount" class="form-control" style="width: 250px;"
+            placeholder="Сумма накопления (руб)">
+        <button type="submit" class="btn btn-success">Вычислить</button>
+    </div>
+</form>
+
+<div id='calendar' class="mt-4 w-100"></div>
+<p id="result" class="mt-4"></p>
+
+{% endblock %}

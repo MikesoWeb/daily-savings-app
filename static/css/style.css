@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#savings-form input {
+  width: 250px;
+}
+
+
+#savings-form button {
+  max-width: 150px;
+  margin-left: 10px;
+}
+
+
+#calendar {
+  margin-top: 20px;
+}
+
+
+#result {
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+/* Заглавная буква в названии месяца */
+.fc-toolbar-title {
+  text-transform: capitalize;
+}
